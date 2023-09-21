@@ -1,0 +1,270 @@
+#video-call-container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#peer-id p {
+  margin: 0;
+}
+
+#content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-pane {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-right: 1px solid #ccc;
+}
+
+#left-pane form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left-pane input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#left-pane button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#left-pane button:hover {
+  background-color: #555;
+}
+
+#right-pane {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#right-pane form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#right-pane input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#right-pane button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#right-pane button:hover {
+  background-color: #555;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#local-video,
+#remote-video {
+  width: 50%;
+}
+
+#screen-sharing button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#screen-sharing button:hover {
+  background-color: #555;
+} */
+
+body,
+html,
+#video-call-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#video-call-container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#peer-id p {
+  margin: 0;
+}
+
+/* Content container */
+#content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Left pane styling */
+#left-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+}
+
+#left-pane form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left-pane input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#left-pane button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#left-pane button:hover {
+  background-color: #555;
+}
+
+/* Right pane styling */
+#right-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+}
+
+#right-pane form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#right-pane input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#right-pane button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#right-pane button:hover {
+  background-color: #555;
+}
+
+/* Video container */
+#video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#local-video,
+#remote-video {
+  width: 50%;
+}
+
+/* Screen sharing button */
+#screen-sharing button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#screen-sharing button:hover {
+  background-color: #555;
+}
